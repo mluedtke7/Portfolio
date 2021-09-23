@@ -1,0 +1,139 @@
+style.css
+
+:root{
+    --dark: #0081a7;
+    --medium: #00AFB9;
+    --medium-light: white;
+    --light-medium: #FED9B7;
+    --light: #f07167;
+}
+header {
+    align-items: stretch;
+    padding: 50px;
+}
+
+h1 {
+    display: inline-block;
+    padding-top: 0px;
+    margin-left: 25px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h1::after {
+    content: "!!!";
+}
+
+nav{
+    padding-top: -5px;
+    margin-right: 50px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+nav ul{
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    display:inline-block;
+    margin-left: 35px;
+}
+
+a:link{
+    text-decoration: none;
+    font-style: italic;
+    color: black;    
+}
+.header {
+    background-color: var(--light);
+    text-align: center;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+    height: 315px;
+    width: 425px;
+    margin-right: 25px;
+}
+
+#myimage{
+    background-color: var(--light);
+}
+#introtext{
+    border-left: 5px solid var(--light-medium);
+}
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.flex-item {
+    border: 5px solid var(--dark);
+    background-color: var(--medium);
+    color: var(--light);
+    min-height: 100px;
+    max-height: 100px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+ }
+  .flex-item:first-child {
+      min-height: 400px; 
+      flex-basis: 100%;
+  }
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .flex-item div {
+    background-color: var(--light);
+    padding: 8px 10px;
+  }
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact h2 {
+border-right: 6px solid var(--light);
+padding-right: 30px;
+line-height: 3;
+font-family: 'Courier New', Courier, monospace;
+font-style: italic;
+font-size: 20px;
+}
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact ul li {
+    display: inline-block;
+    margin-left: 50px;  
+}
+
+  
